@@ -1,7 +1,43 @@
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 import Header from "../components/header"
 import projectsData from "../database/data"
+import Footer from "../components/Footer";
+
 
 const Projects=()=>{
+  
+  useGSAP(() => {
+    gsap.from(".card", {
+      opacity: 0,
+      y: 50,
+      stagger: 0.2,
+      duration: 0.8,
+      ease: "power3.out"
+    });
+
+    gsap.from("h2", {
+      opacity: 0,
+      y: -20,
+      duration: 0.8,
+      ease: "power2.out"
+    });
+      gsap.from("p", {
+      opacity: 0,
+      y: 30,
+      stagger: 0.1,
+      duration: 0.8,
+      ease: "power3.out"
+    });
+     gsap.from("li", {
+      opacity: 0,
+      y: 30,
+      stagger: 0.1,
+      duration: 0.8,
+      ease: "power3.out"
+    });
+  }, []);
+
 return(<>
 <Header/>
 <hr/>
@@ -56,6 +92,7 @@ return(<>
           </div>
     </section>
 </main>
+<Footer/>
 </>)
 }
 export default Projects

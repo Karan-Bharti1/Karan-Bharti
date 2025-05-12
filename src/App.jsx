@@ -6,6 +6,7 @@ import { gsap } from 'gsap/gsap-core'
 import Header from './components/header'
 import { Link } from 'react-router-dom'
 import { useGSAP } from '@gsap/react'
+import Footer from './components/Footer'
 const technologies = [
   "🍃 MongoDB",
   "🚂 Express.js",
@@ -29,25 +30,29 @@ function App() {
       duration: 0.8,
       ease: "power3.out"
     });
-     gsap.from("h2", {
+
+    gsap.from("h2", {
       opacity: 0,
       y: 30,
       stagger: 0.1,
       duration: 0.8,
       ease: "power3.out"
     });
-         gsap.from("p", {
+
+    gsap.from("p", {
       opacity: 0,
       y: 30,
       stagger: 0.1,
       duration: 0.8,
       ease: "power3.out"
     });
-  }, []);
+
     gsap.fromTo(".link-button", 
-    { opacity: 0, scale: 0.8, y: -20 }, 
-    { opacity: 1, scale: 1, y: 0, duration: 1, ease: "power3.out" }
-  );
+      { opacity: 0, scale: 0.8, y: -20 }, 
+      { opacity: 1, scale: 1, y: 0, duration: 1, ease: "power3.out" }
+    );
+  }, []);
+    
   return (
     <>
      <Header/>
@@ -87,6 +92,8 @@ I’m passionate about clean architecture, seamless UI/UX, and writing code that
          </section>
      
      </main>
+     
+     <Footer/>
     </>
   )
 }
