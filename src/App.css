@@ -47,6 +47,10 @@ color:#fff;
 color:var(--primary--);
 background-color: #fff;
 }
+.card-project{
+  border: 1px solid #fff;
+  padding: 1rem;
+}
 @media (min-width: 768px) {
   body {
     font-size: 0.75rem; /* Medium screens */

@@ -1,4 +1,4 @@
-import { useState,useEffect } from 'react'
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min'
 import './App.css'
@@ -82,7 +82,7 @@ I’m passionate about clean architecture, seamless UI/UX, and writing code that
           <div className='container text-center '>
             <h2 className='py-2 text-center'>View My Projects</h2>
    <p className="fs-5 py-2 text-center">From sleek UIs to powerful backend solutions — take a deep dive into what I’ve been building lately.</p>
-   <Link className='link-button'>Explore Projects</Link>
+   <Link className='link-button' to="/projects">Explore Projects</Link>
           </div>
          </section>
      
