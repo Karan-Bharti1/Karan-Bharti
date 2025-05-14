@@ -4,6 +4,7 @@ import './index.css'
 import{createBrowserRouter, RouterProvider} from "react-router-dom"
 import App from './App.jsx'
 import Projects from './pages/Projects.jsx'
+import Blogs from './pages/Blogs.jsx'
 const router=createBrowserRouter([
   {
       path: '/',
@@ -11,6 +12,9 @@ const router=createBrowserRouter([
   },{
     path:"/projects",
     element:<Projects/>
+  },{
+    path:"/blogs",
+    element:<Blogs/>
   }
 ])
 createRoot(document.getElementById('root')).render(

@@ -26,7 +26,9 @@ return(<>
             <li className="nav-item mx-2">
               <Link className="nav-link text-light link-view" to="/projects">Projects</Link>
             </li>
-            
+             <li className="nav-item mx-2">
+              <Link className="nav-link text-light link-view" to="/Blogs">Blogs</Link>
+            </li>
           </ul>
         
         </div>

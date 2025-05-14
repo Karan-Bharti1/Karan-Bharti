@@ -64,7 +64,7 @@ return(<>
                         href={project.links.live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn btn-primary btn-sm me-2"
+                        className="link-button-secondary btn-sm me-2"
                       >
                         Live Site
                       </a>

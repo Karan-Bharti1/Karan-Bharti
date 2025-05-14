@@ -4,7 +4,7 @@ const projectsData=[
     techStack: "MERN (MongoDB, Express.js, React.js, Node.js)",
     description: "Elite Loom is a full-featured e-commerce platform designed for seamless shopping experiences. It includes product listings, user authentication, cart management, and a secure checkout flow.",
     features: [
-      "Developed a responsive and user-friendly UI using React and Tailwind CSS.",
+      "Developed a responsive and user-friendly UI using React and Bootstrap CSS.",
       "Implemented backend APIs for product management, user authentication, and order processing using Node.js and Express.",
       "Integrated MongoDB for scalable data storage of products, users, and orders.",
       "Deployed the application on Vercel for frontend and Render for backend services."

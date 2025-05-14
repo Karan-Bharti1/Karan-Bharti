@@ -47,6 +47,19 @@ color:#fff;
 color:var(--primary--);
 background-color: #fff;
 }
+.link-button-secondary{
+  background-color: var(--secondary--);
+  color:#fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.3rem;
+  border-radius:0.3rem;
+}
+.link-button-secondary:hover{
+  color:var(--secondary--);
+  background-color: #fff;
+  border:1px solid var(--secondary--)
+}
 .card-project{
   border: 1px solid #fff;
   padding: 1rem;
