@@ -18,7 +18,7 @@ const Blogs = () => {
                                     <div className="card-body d-flex flex-column">
                                         <h5 className="card-title">{blog.title}</h5>
                                         <p className="card-text flex-grow-1">{blog.description}</p>
-                                        <Link  className=" link-button-secondary mt-auto">
+                                        <Link to={blog.path}  className=" link-button-secondary mt-auto">
                                             Let's Check it Out
                                         </Link>
                                     </div>

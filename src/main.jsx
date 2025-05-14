@@ -5,6 +5,7 @@ import{createBrowserRouter, RouterProvider} from "react-router-dom"
 import App from './App.jsx'
 import Projects from './pages/Projects.jsx'
 import Blogs from './pages/Blogs.jsx'
+import PropDrill from './Blogs/PropDrill.jsx'
 const router=createBrowserRouter([
   {
       path: '/',
@@ -15,6 +16,9 @@ const router=createBrowserRouter([
   },{
     path:"/blogs",
     element:<Blogs/>
+  },{
+    path:"/props-drilling",
+    element:<PropDrill/>
   }
 ])
 createRoot(document.getElementById('root')).render(
