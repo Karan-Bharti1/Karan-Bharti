@@ -1,6 +1,30 @@
 import Header from "../components/header";
-
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 const PropDrill = () => {
+      useGSAP(() => {
+        gsap.from("h3, h5", {
+            opacity: 0,
+            y: 20,
+            duration: 0.6,
+            stagger: 0.2,
+            ease: "power3.out",
+        });
+
+        gsap.from("p.fs-5, ol", {
+            opacity: 0,
+            y: 30,
+            duration: 0.8,
+            stagger: 0.2,
+            ease: "power3.out",
+        });
+
+        gsap.from("pre", {
+            opacity: 0,
+            scale: 0.9,
+            duration: 0.7,
+            ease: "back.out(1.7)",
+        })})
     return (
         <>
             <Header />
