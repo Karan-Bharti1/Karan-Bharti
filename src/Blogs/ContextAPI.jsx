@@ -1,6 +1,7 @@
 import Header from "../components/header";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap/gsap-core";
+import Footer from "../components/Footer";
 
 const ContextAPI = () => {
     useGSAP(() => {
@@ -116,7 +117,7 @@ export default MessageProvider;`}</code>
 </pre>
 
 <p className="fs-5">
-    Here we create a reusable <code>MessageProvider</code> component that wraps any child components which need access to context.We might pass both state variables,state and helper function in as <code>value</code> in return statement of the component.
+    Here we create a reusable <code>MessageProvider</code> component that wraps any child components which need access to context.We might pass both state variables,state and helper functions  as <code>value</code> attribute.
 </p>
 
 <h5 className="mt-4"> Wrapping the App</h5>
@@ -168,6 +169,7 @@ const Child = () => {
                     The Context API is a simple yet powerful way to manage state globally in a React app. It helps in writing cleaner code and avoids unnecessary prop passing. However, for very complex applications with deeply interdependent state, you might still consider state management libraries like Redux.
                 </p>
             </main>
+            <Footer/>
         </>
     );
 };
