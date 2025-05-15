@@ -6,6 +6,7 @@ import App from './App.jsx'
 import Projects from './pages/Projects.jsx'
 import Blogs from './pages/Blogs.jsx'
 import PropDrill from './Blogs/PropDrill.jsx'
+import ContextAPI from './Blogs/ContextAPI.jsx'
 const router=createBrowserRouter([
   {
       path: '/',
@@ -19,6 +20,9 @@ const router=createBrowserRouter([
   },{
     path:"/props-drilling",
     element:<PropDrill/>
+  },{
+      path:"/context",
+      element:<ContextAPI/>
   }
 ])
 createRoot(document.getElementById('root')).render(

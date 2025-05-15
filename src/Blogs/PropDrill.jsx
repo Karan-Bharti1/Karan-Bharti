@@ -1,6 +1,8 @@
 import Header from "../components/header";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
+import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 const PropDrill = () => {
       useGSAP(() => {
         gsap.from("h3, h5", {
@@ -85,10 +87,12 @@ const Child = ({ message }) => {
 
                 <h3 className="text-center">Context API: A Solution to Prop Drilling</h3>
                 <p className="fs-5">Context API offers a solution to this problem by acting like a global store for data. Instead of passing props through every level, you can use a Context Provider to share data at a higher level. Then, any component in the tree can access that data directly using useContext(), bypassing the need to pass props down manually. This approach simplifies code, improves scalability, and makes managing global data easier.</p>
+                <p className="fs-5">To know more about Context API <Link to={"/context"}>Click Here</Link></p>
+            
                 <h3 className="text-center">State Management libraries like redux: A solution to prop drilling</h3>
                 <p className="fs-5">Redux solves prop drilling by providing a centralized store for managing global state. Instead of passing data through multiple components, you can directly connect any component to the store and access the required data. Redux uses actions to update the store and reducers to handle state changes. This approach eliminates the need for prop passing, making the app more maintainable and scalable.</p>
             </main>
-            
+            <Footer/>
         </>
     );
 };
