@@ -1,5 +1,23 @@
 const projectsData=[
   {
+  title: "Pixel Cloud – Image Management & Sharing Platform",
+  techStack: "MERN Stack",
+  description: "Pixel Cloud is a full-stack image management platform where users can create albums, upload & organize images, like favorites, and share them via email with secure, role-based access. It features a polished UI with lightbox viewing, comments, and a recycle bin.",
+  features: [
+    "Integrated Google OAuth 2.0 for secure user login and identity-based access.",
+    "Implemented album and image CRUD operations with soft-delete (Recycle Bin).",
+    "Built public view with role-based UI — viewers get read-only & comment access.",
+    "Designed comment system with name, avatar, and timestamps for transparency.",
+    "Used Cloudinary for optimized image storage and Lightbox for fullscreen viewing."
+  ],
+  links: {
+    live: "https://pixel-cloud-three.vercel.app/login",
+    frontendRepo: "https://github.com/Karan-Bharti1/pixel-cloud",
+    backendRepo: "https://github.com/Karan-Bharti1/pixel-cloud-backend"
+  }
+}
+,
+  {
     title: "Elite Loom – E-Commerce Clothing Platform",
     techStack: "MERN (MongoDB, Express.js, React.js, Node.js)",
     description: "Elite Loom is a full-featured e-commerce platform designed for seamless shopping experiences. It includes product listings, user authentication, cart management, and a secure checkout flow.",
@@ -47,23 +65,6 @@ const projectsData=[
       backendRepo: "https://github.com/Karan-Bharti1/TFB"
     }
   },
-  {
-  title: "Pixel Cloud – Image Management & Sharing Platform",
-  techStack: "MERN Stack",
-  description: "Pixel Cloud is a full-stack image management platform where users can create albums, upload & organize images, like favorites, and share them via email with secure, role-based access. It features a polished UI with lightbox viewing, comments, and a recycle bin.",
-  features: [
-    "Integrated Google OAuth 2.0 for secure user login and identity-based access.",
-    "Implemented album and image CRUD operations with soft-delete (Recycle Bin).",
-    "Built public view with role-based UI — viewers get read-only & comment access.",
-    "Designed comment system with name, avatar, and timestamps for transparency.",
-    "Used Cloudinary for optimized image storage and Lightbox for fullscreen viewing."
-  ],
-  links: {
-    live: "https://pixel-cloud-three.vercel.app/login",
-    frontendRepo: "https://github.com/Karan-Bharti1/pixel-cloud",
-    backendRepo: "https://github.com/Karan-Bharti1/pixel-cloud-backend"
-  }
-}
-
+  
 ];
 export default projectsData;
