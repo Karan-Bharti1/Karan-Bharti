@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaAddressBook, FaRegCopy } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaAddressBook } from "react-icons/fa";
 import { useState } from "react";
 
 const Footer = () => {
@@ -11,52 +11,65 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white mt-5">
-      <hr className="border-gray-700" />
-      <div className="container mx-auto py-5 text-center">
-        <p className="text-lg font-semibold mb-2">Contact Me</p>
+    <footer className=" text-white mt-5">
+      <hr className="border-secondary" />
+      <div className="container py-5 text-center">
+        <p className="h5 mb-3">Contact Me</p>
 
-        <div className="flex justify-center gap-6 mb-4">
+        <div className="d-flex justify-content-center gap-4 mb-4 position-relative">
           <a
             href="https://github.com/Karan-Bharti1"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="p-2 text-white"
+            className="text-white"
           >
-            <FaGithub size={30} className="hover:text-gray-400" />
+            <FaGithub size={30} className="hover-opacity" />
           </a>
+
           <a
             href="https://www.linkedin.com/in/bharti1999/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="p-2 text-white"
+            className="text-white"
           >
-            <FaLinkedin size={30} className="hover:text-blue-400" />
+            <FaLinkedin size={30} className="hover-opacity" />
           </a>
-          <a
-            href="https://docs.google.com/document/d/1qrhPBpvMv_VDlZ0MuQwEKnPy_42JXj9A/edit?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Resume"
-            className="p-2 text-white"
-          >
-            <FaAddressBook size={30} className="hover:text-green-400" />
-          </a>
+
+          {/* Address Icon with tooltip */}
+          <div className="position-relative d-inline-block">
+            <span
+              className="text-white"
+              onClick={copyEmail}
+              onMouseEnter={(e) =>
+                e.currentTarget.nextElementSibling.classList.add("show")
+              }
+              onMouseLeave={(e) =>
+                e.currentTarget.nextElementSibling.classList.remove("show")
+              }
+              style={{ cursor: "pointer" }}
+            >
+              <FaAddressBook size={30} className="hover-opacity" />
+            </span>
+
+            {/* Tooltip */}
+            <div
+              className="tooltip bs-tooltip-top position-absolute translate-middle-x text-dark bg-white border rounded px-2 py-1 small"
+              style={{
+                top: "-40px",
+                left: "50%",
+                zIndex: 9999,
+                display: "block",
+                whiteSpace: "nowrap",
+              }}
+            >
+              {copied ? "Copied!" : "Click to copy email"}
+            </div>
+          </div>
         </div>
 
-        {/* COPY EMAIL BUTTON */}
-        <div className="mb-4 flex justify-center items-center gap-2">
-          <button
-            onClick={copyEmail}
-            className="flex items-center gap-2 text-sm border border-white px-3 py-1 rounded hover:bg-white hover:text-black transition"
-          >
-            <FaRegCopy /> {copied ? "Copied!" : "Copy Email"}
-          </button>
-        </div>
-
-        <p className="text-sm text-gray-400">
+        <p className="small text-secondary mb-0">
           © 2025 Karan Bharti. All rights reserved.
         </p>
       </div>
