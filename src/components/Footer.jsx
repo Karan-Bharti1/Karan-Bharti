@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin, FaAddressBook } from "react-icons/fa";
 import { useState } from "react";
-
+import { MdEmail } from "react-icons/md";
 const Footer = () => {
   const [copied, setCopied] = useState(false);
 
@@ -50,7 +50,8 @@ const Footer = () => {
               }
               style={{ cursor: "pointer" }}
             >
-              <FaAddressBook size={30} className="hover-opacity" />
+              
+              <MdEmail size={30} className="hover-opacity"/>
             </span>
 
             {/* Tooltip */}
