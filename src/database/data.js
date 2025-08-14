@@ -1,4 +1,23 @@
 const projectsData=[
+    {
+  title: "K-Flix GPT – AI-Powered Movie Recommendation Platform",
+  techStack: "React, Tailwind CSS, Firebase, Node.js, Express, GPT API, TMDB API",
+  description: "K-Flix GPT is an AI-driven movie discovery and streaming platform. It integrates GPT for personalized movie recommendations, TMDB for real-time movie data, and Firebase for secure user authentication and profile management.",
+  features: [
+    "Implemented secure authentication and profile management with Firebase.",
+    "Integrated GPT API for smart, conversational movie recommendations.",
+    "Fetched and displayed real-time movie details from TMDB API.",
+    "Added search with dynamic suggestions and filters for better UX.",
+    "Built responsive UI with Tailwind CSS and smooth navigation.",
+    "Developed watchlist and trailer viewing features for engagement."
+  ],
+  links: {
+    live: "https://k-flix-omega.vercel.app/",
+    frontendRepo: "https://github.com/Karan-Bharti1/K-FLIX-V1",
+    backendRepo: "https://github.com/Karan-Bharti1/GPT-Integration-Access"
+  }
+}
+  ,
   {
   title: "Pixel Cloud – Image Management & Sharing Platform",
   techStack: "MERN Stack",
@@ -64,7 +83,6 @@ const projectsData=[
       frontendRepo: "https://github.com/Karan-Bharti1/Task-Finder",
       backendRepo: "https://github.com/Karan-Bharti1/TFB"
     }
-  },
-  
+  }
 ];
 export default projectsData;
